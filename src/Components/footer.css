@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+/* creating a variable for colors */
+:root 
+{
+	--text:#777777;
+	--primary:#10D600 ;
+	--secondary:#10D600;
+	--ternary:#007013;
+	--danger:#FE4545;
+	--pure:#FEFEFE;
+	--light:#F0F0F0;
+	--haven:#FFFFFF;
+	--footer:#20333F;
+	--shadow:0px 10px 30px rgba(118,85,225,0.3);
+	--box-shadow:0px 10px 30px rgba(57,56,61,0.205);
+	--gradient:linear-gradient(90deg,#10D600 0%,#10630a 100%);
+}
+
+/* creating the main Container class for responsive designs */
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+footer{
+    background: #f5f5f5;
+    margin-top: 4rem ;
+}
+footer .container 
+{
+	display: flex;
+	justify-content: space-between;
+
+}
+footer .container .left
+{
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+}
+footer .container .left img{
+	width: 4rem;
+	height: 4rem;
+	object-fit: cover;
+}
+footer .container .left p{
+	color: var(--text);
+	margin-top: 1rem;
+}
+
+footer .container .right
+{
+	width: 60%;
+
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 3rem;
+}
+
+
+footer .container .right div{
+	display: flex;
+	flex-direction: column;
+}
+i{
+    margin: 0.7rem;
+	color: var(--text);
+}
+i:hover{
+	color: var(--primary);
+}
+h6{
+    color: var(--text);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+footer .container .right div a{
+	text-decoration: none;
+	margin: 0.6rem;
+	color: var(--text);
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	font-weight: bolder;
+	letter-spacing: 1px;
+
+}
+footer .container .right div a:hover
+{
+	font-weight: bold;
+	color: var(--primary);
+}
+h5{
+	color: var(--primary);
+	font-size: 1rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+@media(max-width:970px)
+{
+	footer .container{
+		flex-direction: column;
+	}
+	footer .container .left{
+		width: 100%;
+	}
+	footer .container .right
+	{
+		width: 100%;
+	}
+}
+.li
+{
+	text-decoration: none;
+}
+@media(max-width:600px)
+{
+	footer .container .right{
+	flex-direction: column;
+	}
+}

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+/* creating a variable for colors */
+:root 
+{
+	--text:#777777;
+	--primary:#10D600 ;
+	--secondary:#10D600;
+	--ternary:#007013;
+	--danger:#FE4545;
+	--pure:#FEFEFE;
+	--light:#F0F0F0;
+	--haven:#FFFFFF;
+	--footer:#20333F;
+	--shadow:0px 10px 30px rgba(118,85,225,0.3);
+	--box-shadow:0px 10px 30px rgba(57,56,61,0.205);
+	--gradient:linear-gradient(90deg,#10D600 0%,#10630a 100%);
+}
+
+/* creating the main Container class for responsive designs */
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+body
+{
+	-webkit-font-smoothing:antialiased;
+	background: #FAFAFA;
+}
+span{
+	background: #10D600 !important;
+	border: none !important;
+	color: #fff !important;
+	cursor: pointer;
+}
+input
+{
+	padding: 0.8rem !important;
+	background: rgba(0,0,0,0.7)!important;
+	outline: none !important;
+	border: none !important;
+	color: #fff !important;
+	letter-spacing: 1px !important;
+}
+::selection
+{
+	background: var(--primary);
+	color: #fff;
+}

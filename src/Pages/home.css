@@ -1,0 +1,30 @@
+.container .base
+{
+    margin-top: 4rem;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+flex-wrap: wrap;
+}
+h4{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: var(--shadow);
+    font-weight: bolder;
+}
+h4:hover
+{
+    text-shadow: none;
+}
+i{
+    color: var(--text);
+}
+.not
+{
+    display: none;
+}

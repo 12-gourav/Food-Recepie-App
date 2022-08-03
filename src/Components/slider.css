@@ -1,0 +1,14 @@
+section.top
+{
+    background-image: url(./img/top3.png);
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-success
+{
+    background: var(--primary) !important;
+}
